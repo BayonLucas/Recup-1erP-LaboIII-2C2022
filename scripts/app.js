@@ -57,7 +57,7 @@ tabla.addEventListener("click", (e) => {
             completarForm(anuncio);
             idSelected = anuncio.id;
             modificarBotones();
-        }
+        } 
     }
 });
 
