@@ -3,7 +3,8 @@ body{
     border: 0;  
 }
 main{
-    height: calc(100vh - 80px - 80px) ;
+    /* height: calc(100vh - 80px - 80px) ; */
+    height: 100vh ;
 }
 header, footer{
     background-color: orange;  
@@ -127,7 +128,7 @@ input[type="radio"]{
 }
 /* ------------------------------------------------------------------------------------------ */
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1150px){
     #form-especificaciones{
         display: flex;
         align-items: center;    
@@ -143,7 +144,20 @@ input[type="radio"]{
         height: calc(100vh) ;
     }
 }
-@media screen and (min-width: 1100px){
+@media screen and (max-width: 850px){
+    #tabla-container {
+        margin: 0;
+        border: 10px;
+        padding: 10px;
+    }
+    table {
+    width: 90vh;
+    overflow: hidden;
+    overflow-x: scroll;
+    display:block;
+    }
+}
+@media screen and (min-width: 1150px){
     #form-especificaciones{
         align-items: center;
     }

@@ -96,7 +96,7 @@ btnCancelar.addEventListener("click", () =>{
 btnEliminar.addEventListener("click", () =>{
     eliminarAnuncio(listaAnuncios, idSelected);
     actualizarTabla(listaAnuncios);
-    playCustomAlert("Eliminación", "Se eliminó correctamente. Pero hierba mala nunca muere");
+    playCustomAlert("Eliminación", "Se eliminó correctamente. Pero ojo! hierba mala nunca muere");
     btnCancelar.click();
 });
 
@@ -299,8 +299,8 @@ function playCustomAlert(titulo, message){
     setTimeout(()=>{
         ventanaFlotante.classList.add("invisible");
         btnGuardar.classList.remove("invisible");
-        alertContainer.remove(h1);
-        alertContainer.remove(p);
+        h1.remove();
+        p.remove();
     }, 2000);
 }
 
